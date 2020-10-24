@@ -1,4 +1,11 @@
+import logging
+
 from telegram.ext import Updater, CommandHandler
+
+logging.basicConfig(
+    level=logging.INFO,
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+
 
 
 updater = Updater(
